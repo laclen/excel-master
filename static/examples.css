@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+body,
+body {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  align-items: center;
+  padding-top: 60px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.icon {
+  width: 100px;
+  pointer-events: none;
+  forced-color-adjust: none;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: bold;
+  color: #202123;
+  margin: 16px 0 40px;
+}
+
+.example {
+  margin-top: 65px;
+  margin-bottom: 10px;
+  color: #06783b;
+}
+
+.question {
+  display: block;
+}
+
+.openai-icon {
+  align-self: center;
+  width: 200px;
+  height: 40px;
+  pointer-events: none;
+  forced-color-adjust: none;
+  margin-bottom: 7.5px;
+}
+
+.footer{
+  display: flexbox;
+  text-align: center; 
+  margin-top: 85px;
+}

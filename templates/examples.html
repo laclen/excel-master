@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset='utf-8' />
+    <title>Excel Master - Beta</title>
+    <meta name="author" content="Celal Zamanoglu">
+    <meta name="description" content="Excel Function bot that solves given tasks with excel built-in functions">
+    <link rel="shortcut icon" href="/static/images/excel.png"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='examples.css') }}" />
+</head>
+
+
+<body>
+    
+    <img src="/static/images/excel.png" class="icon" />
+    <h3>Excel Master</h3>
+
+    <!-- SAMPLE EXAM EXCEL SHEET -->
+    <h4 style="color: #06783b;">Sample Excel Sheet</h4>
+    <img name="excel-data" src="/static/images/exceldata.png" width="864px" height="305">
+    <div class="instructions" style="width: 750px;">
+
+        <!--- Q1 --->
+        <h4 class="example">Example</h4>
+        <img class="question" name="q1" src="/static/images/1.png" width="750px">
+
+        <h4 style="margin-top: 30px; margin-bottom: 10px;">Proper way of asking this question:</h4>
+
+        <span>Calculate the final grade out of 100 using the equation: Final Grade = (Quiz1 x 40 + Quiz2 X 60)/100.
+            Quiz1 grades are starting at C2 and Quiz2 grades are starting at D2.
+        </span>
+
+
+        <!--- Q2 -->
+        <h4 class="example">Example</h4>
+        <img name="q2" src="/static/images/2.png" width="750px">
+
+        <h4 style="margin-top: 30px; margin-bottom: 10px;">Proper way of asking this question:</h4>
+        <span>Students' final grades are between E2:E251, compute if the students pass or fail accordingly; if
+            finalgrade>=60 print 'PASS' else print 'FAIL'
+        </span>
+
+
+        <!--- Q3 -->
+        <h4 class="example">Example</h4>
+        <img name="q3" src="/static/images/3.png" width="750px">
+
+        <h4 style="margin-top: 30px; margin-bottom: 10px;">Proper way of asking this question:</h4>
+        <span>Column A includes sex types, column B includes school types, and students' final grades are between E2 and
+            E251, print student's final grade if student is male and in public
+        </span>
+
+        <!--- Q4 -->
+        <h4 class="example">Example</h4>
+        <img name="q4" src="/static/images/4.png" width="750px">
+
+        <h4 style="margin-top: 30px; margin-bottom: 10px;">Proper way of asking this question:</h4>
+        <span>Now calculate the number of male students in public school that passes the course, by using the
+            final grades in column G. final grade should be greater than or equal to 60 to student to pass
+        </span>
+    </div>
+
+    <div class="footer">
+        <p style="font-size:medium; font-weight: 500;">Powered by</p>
+        <img class="openai-icon" src="/static/images/openai.jpg" /> <br>
+        <p style="font-size: small;">Excel Master © 2022</p>
+    </div>
+
+</body>
+
+</html>

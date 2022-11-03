@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset='utf-8' />
+  <title>Excel Master - Beta </title>
+  <meta name="author" content="Celal Zamanoglu">
+  <meta name="description" content="Excel Function bot that solves given tasks with excel built-in functions">
+  <link rel="shortcut icon" href="/static/images/excel.png" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
+</head>
+
+<body>
+
+  <img src="/static/images/excel.png" class="icon" />
+  <h3>Excel Master</h3>
+  
+  <form action="/excel-master" method="post">
+
+    <textarea placeholder="Here, you can describe your task or ask a question" class="input" type="text" name="task"
+      rows="1" maxlength="1000"></textarea>
+    <script src="{{ url_for('static', filename='autosize.js') }}"></script>
+    <script>
+      autosize(document.querySelectorAll('textarea'));
+    </script>
+
+    <input type="submit" value="Generate" />
+
+  </form>
+
+  {% if result %}
+  <div class="textarea-task">{{ task }}</div>
+  <div class="result">{{ result }}</div>
+  {% endif %}
+
+  <h4 style="margin-top: 100px;">How to ask properly?</h4>
+  <div class="instructions" style="width: 534px;">
+    <span>You should detailly explain your question by providing every important data clearly to help AI better
+      understand the
+      whole picture.
+    </span>
+  </div>
+
+  <a style="margin-top: 27px;" href="/examples" target="_blank"
+    title="Sample exam questions for more efficient usage of the AI!">
+    Click here for sample questions
+  </a>
+
+
+  <div class="footer">
+    <p style="font-size:medium; font-weight: 400;">Powered by</p>
+    <img class="openai-icon" src="/static/images/openai.jpg" /> <br>
+    <p style="font-size: small;">Excel Master © 2022</p>
+  </div>
+
+</body>

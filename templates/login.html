@@ -1,0 +1,84 @@
+<head>
+    <meta charset='utf-8' />
+    <title>Excel Master - Beta </title>
+    <meta name="author" content="Celal Zamanoglu">
+    <meta name="description" content="Excel Function bot that solves given tasks with excel built-in functions">
+    <link rel="shortcut icon" href="/static/images/excel.png" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}" />
+    <script src="https://kit.fontawesome.com/0fb1f4c205.js" crossorigin="anonymous"></script>
+</head>
+
+<img src="/static/images/excel.png" class="icon" />
+<h3>Excel Master</h3>
+
+<div class="container" id="container">
+    <div class="form-container sign-up-container">
+        <form action="#">
+            <h1>Create Account</h1>
+            <div class="social-container">
+                <a style="visibility:hidden;" href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://google.com.tr" class="social"><i class="fab fa-google-plus-g"></i></a>
+                <a style="visibility:hidden;" href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <span>or use your email for registration</span>
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <button>Sign Up</button>
+        </form>
+    </div>
+    <div class="form-container sign-in-container">
+        <form action="/" , method="POST">
+            <h1>Sign in</h1>
+
+            <div class="social-container">
+                <a style="visibility:hidden;" href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                <a href="/google-login" class="social"><i class="fab fa-google-plus-g"></i></a>
+                <a style="visibility:hidden;" href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <span>or use your account</span>
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <a href="#">Forgot your password?</a>
+            <button>LOG IN</button>
+        </form>
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <h1>Welcome Back!</h1>
+                <p>Excel Master is always here to help you!</p>
+                <button class="ghost" id="signIn">Sign In</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+                <h1>Welcome!</h1>
+                <p>Excel Master is an AI powered function generator that solves almost any given Excel tasks with
+                    built-in functions.</p>
+                <p>If you don't have an account yet, please sign up and start using this amazing app!</p>
+                <button class="ghost" id="signUp">Sign Up</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="Announcements" style="margin: 40px 40px 0px 40px; text-align: center;" >
+    <h2 >Annoucements!</h2>
+    <p>
+        For now, only the Google Sign-in Button is working, but login requirement is off for testing purposes so, if you dont't have an Google account
+        <a style="color:forestgreen;" href="https://excel-master.herokuapp.com/excel-master"/>this link</a> should get you to the app
+    </p>
+</div>
+
+<script>
+    const signUpButton = document.getElementById('signUp');
+    const signInButton = document.getElementById('signIn');
+    const container = document.getElementById('container');
+
+    signUpButton.addEventListener('click', () => {
+        container.classList.add("right-panel-active");
+    });
+
+    signInButton.addEventListener('click', () => {
+        container.classList.remove("right-panel-active");
+    });
+</script>
