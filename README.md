@@ -8,7 +8,6 @@ Project is created with Python and Flask, authentication for the web app is buil
 
 You need an OpenAI API key for app to work.
 
-I have a test server that you can ask questions and see the answers, which is constantly online and I can share it privately if requested.
-
-
+### FOR RECRUITERS ###
+This project is not an imitation of https://excelformulabot.com/, I have created this project and published it on March 2, 2022 on Heroku.
 Beta version is here: https://excel-master.herokuapp.com/excel-master
