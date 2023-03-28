@@ -9,3 +9,6 @@ Project is created with Python and Flask, authentication for the web app is buil
 You need an OpenAI API key for app to work.
 
 I have a test server that you can ask questions and see the answers, which is constantly online and I can share it privately if requested.
+
+
+Beta version is here: https://excel-master.herokuapp.com/excel-master
